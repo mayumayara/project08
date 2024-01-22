@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Free Body Mass Index calculator gives out the BMI value and categorizes BMI based on provided information from WHO and CDC for both adults and children."
+    />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="form-container">
+        <span>Enter your details below</span>
+        <form class="form-wrapper">
+          <div class="input-wrapper">
+            <label for="height">Height</label>
+            <input
+              type="number"
+              min="0"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              name="height"
+              id="height"
+              placeholder="cm"
+            />
+            <i class="fa-solid fa-arrows-up-down"></i>
+          </div>
+          <div class="input-wrapper">
+            <label for="weight">Weight</label>
+            <input
+              type="number"
+              min="0"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              name="weight"
+              id="weight"
+              placeholder="kg"
+            />
+            <i class="fa-solid fa-weight-hanging"></i>
+          </div>
+          <button class="btn">Calculate</button>
+        </form>
+      </section>
+    </main>
+    <dialog>
+      <div class="modal-close">
+        <button><i class="fa-solid fa-x"></i></button>
+      </div>
+      <span class="bmi-statement"></span>
+      <h1 class="bmi-result"></h1>
+    </dialog>
+    <footer class="footer-conteiner">
+      <span
+        >created by
+        <a
+          href="https://github.com/vctrhugoop"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Victor Oliveira</a
+        ></span
+      >
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
